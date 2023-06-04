@@ -8,6 +8,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Piece piece = new Piece(new Square(1, 1), Piece.Color.WHITE, Piece.Type.KING);
+        String line = piece.toString();
+        System.out.println(line);
     }
 }
